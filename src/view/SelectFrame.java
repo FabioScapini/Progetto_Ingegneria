@@ -111,27 +111,37 @@ public class SelectFrame extends JFrame {
 		
 		panel.setLayout(new GridLayout(1,2));
 		
-		JPanel operatoreSala = new JPanel();
+		JPanel operatore = new JPanel();
 		
-		JButton operatoreSala_button = new JButton("Operatore di Sala");
-		operatoreSala.add(operatoreSala_button);
+		JPanel oSala = new JPanel();
+		JButton oSala_button = new JButton("Operatore da Sala");
+		oSala.add(oSala_button);
+		
+		JPanel oInfermiere = new JPanel();
+		JButton oInfermiere_button = new JButton("Infermiere");
+		oInfermiere.add(oInfermiere_button);
+		
+		operatore.setLayout(new GridLayout(2,1));
+		
+		operatore.add(oSala);
+		operatore.add(oInfermiere);
 		
 		JPanel medico = new JPanel();
-		
+				
 		JPanel mAnestesista = new JPanel();
 		JButton mAnestesista_button = new JButton("Medico Anestesista");
 		mAnestesista.add(mAnestesista_button);
-		
+				
 		JPanel mResponsabile = new JPanel();
 		JButton mResponsabile_button = new JButton("Medico Responsabile");
 		mResponsabile.add(mResponsabile_button);
-		
+				
 		medico.setLayout(new GridLayout(2,1));
-		
+				
 		medico.add(mAnestesista);
 		medico.add(mResponsabile);
 		
-		panel.add(operatoreSala);
+		panel.add(operatore);
 		panel.add(medico);
 		return panel;
 	}
