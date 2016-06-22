@@ -16,8 +16,8 @@ public class SegreteriaReparto extends Segreteria {
     /**
      * 
      */
-    public void listaPossibiliOperazioni() {
-        // TODO implement here
+    public String listaPossibiliOperazioni() {
+        return "";
     }
 
 }

@@ -14,8 +14,8 @@ public class MedicoResponsabile extends Medico {
     }
 
 
-    public void listaPossibiliOperazioni(){
-    	// TODO
+    public String listaPossibiliOperazioni(){
+    	return "";
     }
 
 }

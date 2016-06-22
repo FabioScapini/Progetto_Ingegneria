@@ -39,10 +39,11 @@ public abstract class Segreteria {
     }
 
     /**
+     * @return 
      * 
      */
-    public void listaPossibiliOperazioni(){
-    	// TODO
+    public String listaPossibiliOperazioni(){
+    	return "";
     }
 
 }

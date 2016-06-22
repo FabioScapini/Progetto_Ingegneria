@@ -13,8 +13,8 @@ public class MedicoAnestesista extends Medico {
     public MedicoAnestesista() {
     }
 
-    public void listaPossibiliOperazioni(){
-    	// TODO
+    public String listaPossibiliOperazioni(){
+    	return "";
     }
 
 }

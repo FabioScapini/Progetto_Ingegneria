@@ -26,8 +26,8 @@ public class OperatoreSala extends Operatore {
     /**
      * 
      */
-    public void listaPossibiliOperazioni(){
-    	// TODO
+    public String listaPossibiliOperazioni(){
+    	return "";
     }
 
 }

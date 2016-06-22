@@ -10,7 +10,8 @@ public class Paziente {
     /**
      * Default constructor
      */
-    public Paziente() {
+    public Paziente(String codiceSanitario) {
+    	this.codiceSanitario=codiceSanitario;
     }
 
     /**

@@ -23,8 +23,8 @@ public class Infermiere extends Operatore {
     /**
      * 
      */
-    public void listaPossibiliOperazioni(){
-    	// TODO
+    public String listaPossibiliOperazioni(){
+    	return "";
     }
 
 }

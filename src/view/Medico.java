@@ -26,6 +26,6 @@ public abstract class Medico extends Operatore {
     /**
      * 
      */
-    public abstract void listaPossibiliOperazioni();
+    public abstract String listaPossibiliOperazioni();
 
 }

@@ -21,6 +21,6 @@ public abstract class Operatore {
     /**
      * 
      */
-    public abstract void listaPossibiliOperazioni();
+    public abstract String listaPossibiliOperazioni();
 
 }
