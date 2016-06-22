@@ -1,6 +1,8 @@
 package view;
 import java.util.*;
 
+import controller.Paziente;
+
 /**
  * @author Edoardo Chigini, Fabio Scapini
  */
@@ -24,7 +26,30 @@ public class SegreteriaAccettazione extends Segreteria {
     			+ "1) Accettazione Paziente\n"
     			+ "2) Inserisci Dati Ricovero\n"
     			+ "3) Allega Esami\n"
-    			+ "4) Stampa Cartella Clinica\n";
+    			+ "4) Stampa Cartella Clinica\n"
+    			+ "5) Esamina Cartella Clinica\n";
     }
+
+
+
+	@Override
+	public void eseguiOperazione(int val) {
+		switch(val){
+			case 1: //accetto paziente
+					break;
+			case 2: //inserisco Dati Ricovero
+					break;
+			case 3: //allego esami
+					break;
+			case 4: //stampo cartella clinica
+					break;
+			case 5: esaminaCartella(new Paziente(""));
+					break;
+			default: //errore
+		
+		
+		}
+		
+	}
 
 }

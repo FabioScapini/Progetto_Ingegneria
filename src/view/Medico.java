@@ -16,16 +16,13 @@ public abstract class Medico extends Operatore {
     }
 
 
-    /**
-     * @param paziente
-     */
-    public void stampaCartella(Paziente paziente) {
-        // TODO implement here
-    }
+
 
     /**
      * 
      */
     public abstract String listaPossibiliOperazioni();
+    
+    public abstract void eseguiOperazione(int val);
 
 }

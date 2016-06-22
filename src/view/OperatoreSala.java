@@ -19,16 +19,26 @@ public class OperatoreSala extends Operatore {
     /**
      * @param paziente
      */
-    public void stampaCartella(Paziente paziente) {
-        // TODO implement here
-    }
 
-    /**
-     * 
-     */
+
     public String listaPossibiliOperazioni(){
     	return "OPERATORE DI SALA - LISTA POSSIBILI OPERAZIONI\n"
-    			+ "1) Inserimento dati operatore (Intervento)\n";
+    			+ "1) Inserimento dati operatore (Intervento)\n"
+    			+ "2) Esamina Cartella Clinica\n";
     }
+    
+    @Override
+	public void eseguiOperazione(int val) {
+		switch(val){
+			case 1: //Inserisco Dati Operatore nell'intervento
+					break;
+			case 2: esaminaCartella(new Paziente(""));
+				break;
+			default: //errore
+		
+		
+		}
+		
+	}
 
 }

@@ -42,8 +42,8 @@ public abstract class Segreteria {
      * @return 
      * 
      */
-    public String listaPossibiliOperazioni(){
-    	return "";
-    }
+    public abstract String listaPossibiliOperazioni();
+    
+    public abstract void eseguiOperazione(int val);
 
 }
