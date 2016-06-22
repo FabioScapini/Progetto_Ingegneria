@@ -14,7 +14,10 @@ public class MedicoAnestesista extends Medico {
     }
 
     public String listaPossibiliOperazioni(){
-    	return "";
+    	return "MEDICO RESPONSABILE - LISTA POSSIBILI OPERAZIONI\n"
+    			+ "1) Compila Scheda Intervento\n"
+    			+ "2) Compila Scheda Prescrizione\n"
+    			+ "3) Compila Lettera Dimissione\n";
     }
 
 }

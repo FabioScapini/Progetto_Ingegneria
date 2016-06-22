@@ -15,7 +15,8 @@ public class MedicoResponsabile extends Medico {
 
 
     public String listaPossibiliOperazioni(){
-    	return "";
+    	return "OPERATORE DI SALA - LISTA POSSIBILI OPERAZIONI\n"
+    			+ "1) Inserimento dati operatore (Intervento)\n";
     }
 
 }

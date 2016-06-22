@@ -24,7 +24,8 @@ public class Infermiere extends Operatore {
      * 
      */
     public String listaPossibiliOperazioni(){
-    	return "";
+    	return "INFERMIERE - LISTA POSSIBILI OPERAZIONI\n"
+    			+ "1) Registrazione Somministrazione Farmaco\n";
     }
 
 }

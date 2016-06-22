@@ -17,7 +17,9 @@ public class SegreteriaReparto extends Segreteria {
      * 
      */
     public String listaPossibiliOperazioni() {
-        return "";
+    	return "SEGRETERIA REPARTO - LISTA POSSIBILI OPERAZIONI\n"
+    			+ "1) Inserimento Dati Letto\n"
+    			+ "2) Prenotazione Controllo Post-Ricovero\n";
     }
 
 }
