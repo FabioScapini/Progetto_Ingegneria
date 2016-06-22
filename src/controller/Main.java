@@ -1,6 +1,5 @@
 package controller;
 
-
 import view.SelectFrame;
 
 public class Main {

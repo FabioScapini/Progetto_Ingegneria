@@ -21,7 +21,7 @@ public class Esame {
     /**
      * @param risultato
      */
-    public void aggiungiRisultato(Risultato risultato) {
+    public void aggiungiRisultato(/*Risultato risultato*/) {
         // TODO implement here
     }
 

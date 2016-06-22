@@ -30,7 +30,7 @@ public class SelectFrame extends JFrame {
 	private int OP = 0;
 	private int SE = 1;
 	
-	private DefaultComboBoxModel<String> box = new DefaultComboBoxModel<String>;
+	private DefaultComboBoxModel<String> box = new DefaultComboBoxModel<String>();
 	
 	public SelectFrame (){
 		
@@ -102,7 +102,14 @@ public class SelectFrame extends JFrame {
 		password.add(p_label);
 		password.add(p_field);		
 		//Tipo
-		JPanel tipo = new JPanel();
+		JPanel tipo = type == OP ? operatore_panel() : segreteria_panel();
+		
+		login.add(username);
+		login.add(password);
+		login.add(tipo);
+		
+		login.setVisible(true);
+		login.pack();
 	}
 	
 	private JPanel operatore_panel(){
@@ -114,7 +121,7 @@ public class SelectFrame extends JFrame {
 		JPanel operatore = new JPanel();
 		
 		JPanel oSala = new JPanel();
-		JButton oSala_button = new JButton("Operatore da Sala");
+		JButton oSala_button = new JButton("Operatore di Sala");
 		oSala.add(oSala_button);
 		
 		JPanel oInfermiere = new JPanel();
