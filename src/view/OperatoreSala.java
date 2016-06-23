@@ -3,6 +3,7 @@ package view;
 import java.util.*;
 
 import controller.Paziente;
+import controller.TOperatore;
 
 /**
  * @author Edoardo Chigini, Fabio Scapini
@@ -13,6 +14,7 @@ public class OperatoreSala extends Operatore {
      * Default constructor
      */
     public OperatoreSala() {
+    	super(TOperatore.SALA);
     }
 
 
@@ -20,6 +22,9 @@ public class OperatoreSala extends Operatore {
      * @param paziente
      */
 
+    /**
+     * 
+     */
 
     public String listaPossibiliOperazioni(){
     	return "OPERATORE DI SALA - LISTA POSSIBILI OPERAZIONI\n"

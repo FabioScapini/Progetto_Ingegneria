@@ -1,5 +1,6 @@
 package view;
 import controller.Paziente;
+import controller.TOperatore;
 
 /**
  * @author Edoardo Chigini, Fabio Scapini
@@ -10,6 +11,7 @@ public class Infermiere extends Operatore {
      * Default constructor
      */
     public Infermiere() {
+    	super(TOperatore.INFERMIERE);
     }
 
 

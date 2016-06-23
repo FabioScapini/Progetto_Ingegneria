@@ -3,6 +3,7 @@ package view;
 import java.util.*;
 
 import controller.Paziente;
+import controller.TOperatore;
 
 /**
  * @author Edoardo Chigini, Fabio Scapini
@@ -13,6 +14,7 @@ public class MedicoAnestesista extends Medico {
      * Default constructor
      */
     public MedicoAnestesista() {
+    	super(TOperatore.ANESTESISTA);
     }
 
     public String listaPossibiliOperazioni(){

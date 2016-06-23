@@ -2,6 +2,7 @@ package view;
 import java.util.*;
 
 import controller.Paziente;
+import controller.TSegreteria;
 
 /**
  * @author Edoardo Chigini, Fabio Scapini
@@ -12,12 +13,14 @@ public class SegreteriaReparto extends Segreteria {
      * Default constructor
      */
     public SegreteriaReparto() {
+    	super(TSegreteria.REPARTO);
     }
 
 
     /**
      * 
      */
+
     public String listaPossibiliOperazioni() {
     	return "SEGRETERIA REPARTO - LISTA POSSIBILI OPERAZIONI\n"
     			+ "1) Inserimento Dati Letto\n"

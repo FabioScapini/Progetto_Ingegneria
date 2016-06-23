@@ -1,8 +1,11 @@
 package view;
+import java.text.SimpleDateFormat;
 import java.util.*;
-import java.text.*;
-import controller.Paziente;
+
 import controller.CartellaClinica;
+import controller.Paziente;
+import controller.TOperatore;
+import controller.TSegreteria;
 
 /**
  * @author Edoardo Chigini, Fabio Scapini
@@ -13,6 +16,7 @@ public class SegreteriaAccettazione extends Segreteria {
      * Default constructor
      */
     public SegreteriaAccettazione() {
+    	super(TSegreteria.ACCETTAZIONE);
     }
 
 
@@ -20,6 +24,7 @@ public class SegreteriaAccettazione extends Segreteria {
     /**
      * 
      */
+
     public String listaPossibiliOperazioni(){
     	
     	
@@ -33,7 +38,7 @@ public class SegreteriaAccettazione extends Segreteria {
 
 
 
-	@Override
+    @Override
 	public void eseguiOperazione(int val) {
 		switch(val){
 			case 1: //inserisco paziente
@@ -56,6 +61,7 @@ public class SegreteriaAccettazione extends Segreteria {
 		
 		
 		}
+
 		
 	}
 

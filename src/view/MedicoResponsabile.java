@@ -3,6 +3,7 @@ package view;
 import java.util.*;
 
 import controller.Paziente;
+import controller.TOperatore;
 
 /**
  * @author Edoardo Chigini, Fabio Scapini
@@ -13,12 +14,13 @@ public class MedicoResponsabile extends Medico {
      * Default constructor
      */
     public MedicoResponsabile() {
+    	super(TOperatore.RESPONSABILE);
     }
 
 
     public String listaPossibiliOperazioni(){
-    	return "MEDICO RESPONSABILE - LISTA POSSIBILI OPERAZIONI\n"
-    			+ "1) Compila Scheda Intervento\n"
+    	return "OPERATORE DI SALA - LISTA POSSIBILI OPERAZIONI\n"
+    			+ "1) Inserimento dati operatore (Intervento)\n"
     			+ "2) Compila Scheda Prescrizione\n"
     			+ "3) Compila Lettera Dimissione\n"
     			+ "4) Esamina Cartella Clinica\n";

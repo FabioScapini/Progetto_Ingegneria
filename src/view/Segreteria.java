@@ -2,6 +2,7 @@ package view;
 import java.util.*;
 
 import controller.Paziente;
+import controller.TSegreteria;
 
 /**
  * @author Edoardo Chigini, Fabio Scapini
@@ -11,7 +12,9 @@ public abstract class Segreteria {
     /**
      * Default constructor
      */
-    public Segreteria() {
+    public Segreteria(TSegreteria tipo) {
+    	
+    	this.tipo = tipo;
     }
 
     /**
@@ -27,7 +30,7 @@ public abstract class Segreteria {
     /**
      * 
      */
-    private Segreteria tipo;
+    private TSegreteria tipo;
 
 
 
@@ -42,8 +45,14 @@ public abstract class Segreteria {
      * @return 
      * 
      */
+
     public abstract String listaPossibiliOperazioni();
     
     public abstract void eseguiOperazione(int val);
+
+	public String getName() {
+		// TODO Auto-generated method stub
+		return "SEGRETERIA";
+	}
 
 }
