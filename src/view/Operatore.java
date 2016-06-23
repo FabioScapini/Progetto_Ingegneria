@@ -10,18 +10,23 @@ import controller.TOperatore;
  */
 public abstract class Operatore {
 
+	private Terminal terminal;
     /**
      * Default constructor
      */
     public Operatore(TOperatore tipo) {
     	this.tipo = tipo;
-    	new Terminal(this, tipo);
+    	terminal = new Terminal(this, tipo);
     }
 
     /**
      * 
      */
     private TOperatore tipo;
+    
+    public Terminal getTerminal(){
+    	return terminal;
+    }
     
     public void esaminaCartella(Paziente paziente) {
         // TODO implement here

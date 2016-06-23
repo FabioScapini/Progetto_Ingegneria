@@ -29,7 +29,10 @@ import javax.swing.JScrollPane;
 
 public class Terminal extends JFrame {
 
+	private String answer = "";
 	private JTextField insert;
+	private JTextArea textArea;
+	private boolean menu = true;
 
 	/**
 	 * Create the frame.
@@ -114,7 +117,7 @@ public class Terminal extends JFrame {
 		JScrollPane scrollPane = new JScrollPane();
 		center.add(scrollPane);
 		
-		JTextArea textArea = new JTextArea();
+		textArea = new JTextArea();
 		scrollPane.setViewportView(textArea);
 		textArea.setForeground(Color.WHITE);
 		textArea.setBackground(Color.BLACK);
@@ -145,8 +148,16 @@ public class Terminal extends JFrame {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				operatore.eseguiOperazione(Integer.parseInt(insert.getText()));
-				insert.setText("");
+				if(menu){
+					operatore.eseguiOperazione(Integer.parseInt(insert.getText()));
+					textArea.setText(textArea.getText()+ "ope: " +insert.getText());
+					insert.setText("");
+					menu = false;
+				}else{
+					answer = insert.getText();
+					textArea.setText(textArea.getText()+ "ope: " +insert.getText());
+					insert.setText("");
+				}
 			}
 
 			@Override
@@ -263,7 +274,7 @@ public class Terminal extends JFrame {
 		JScrollPane scrollPane = new JScrollPane();
 		center.add(scrollPane);
 		
-		JTextArea textArea = new JTextArea();
+		textArea = new JTextArea();
 		scrollPane.setViewportView(textArea);
 		textArea.setForeground(Color.WHITE);
 		textArea.setBackground(Color.BLACK);
@@ -294,9 +305,16 @@ public class Terminal extends JFrame {
 
 			@Override
 			public void mouseClicked(MouseEvent arg0) {
-				segreteria.eseguiOperazione(Integer.parseInt(insert.getText()));
-				insert.setText("");
-			}
+				if(menu){
+					segreteria.eseguiOperazione(Integer.parseInt(insert.getText()));
+					textArea.setText(textArea.getText()+ "seg: " +insert.getText());
+					insert.setText("");
+					menu = false;
+				}else{
+					answer = insert.getText();
+					textArea.setText(textArea.getText()+ "seg: " +insert.getText());
+					insert.setText("");
+				}
 
 			@Override
 			public void mouseEntered(MouseEvent e) {
@@ -328,6 +346,18 @@ public class Terminal extends JFrame {
 		pack();
 	}
 	
+	public void setTerminal(String str){
+		if(str.charAt(str.length()) != '\n')
+			str += "\n";
+		
+		textArea.setText(textArea.getText()+ "dis: " +str);
+		
+		menu = true;
+		
+	}
 	
+	public String getAnswer(){
+		return answer;
+	}
 
 }
