@@ -1,7 +1,8 @@
 package view;
 import java.util.*;
-
+import java.text.*;
 import controller.Paziente;
+import controller.CartellaClinica;
 
 /**
  * @author Edoardo Chigini, Fabio Scapini
@@ -35,9 +36,15 @@ public class SegreteriaAccettazione extends Segreteria {
 	@Override
 	public void eseguiOperazione(int val) {
 		switch(val){
-			case 1: //accetto paziente
+			case 1: //inserisco paziente
+					Paziente paziente=new Paziente("");
+					if(paziente.pazienteEsistente())
+						break;
+					else
+						paziente.creaPaziente("", "", new SimpleDateFormat("") , "", "", false);
 					break;
-			case 2: //inserisco Dati Ricovero
+			case 2: //inserisco dati ricovero
+					CartellaClinica ricovero=new CartellaClinica("");
 					break;
 			case 3: //allego esami
 					break;

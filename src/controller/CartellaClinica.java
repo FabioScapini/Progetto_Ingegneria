@@ -10,7 +10,9 @@ public class CartellaClinica {
     /**
      * Default constructor
      */
-    public CartellaClinica() {
+    public CartellaClinica(String codiceSanitario) {
+    	this.codiceSanitario=codiceSanitario;
+    	idRicovero=generaID(codiceSanitario);
     }
 
     /**
@@ -31,9 +33,9 @@ public class CartellaClinica {
     /**
      * @return
      */
-    private int generaID() {
-        // TODO implement here
-        return 0;
+    private String generaID(String codiceSanitario) {
+        // TODO direi di fare hash codiceSanitario e data Accettazione
+        return "";
     }
 
     /**

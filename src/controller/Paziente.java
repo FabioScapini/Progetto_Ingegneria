@@ -1,6 +1,7 @@
 package controller;
 
 import java.util.*;
+import java.text.*;
 
 /**
  * @author Edoardo Chigini, Fabio Scapini
@@ -18,6 +19,15 @@ public class Paziente {
      * 
      */
     private String codiceSanitario;
+    
+    public boolean pazienteEsistente(){
+    	
+    	
+    	//TODO
+    	
+    	return false;
+    }
+    
 
 
 
@@ -29,7 +39,7 @@ public class Paziente {
      * @param provinciaResidenza 
      * @param fuoriRegione
      */
-    public void creaPaziente(String nome, String cognome, Date dataNascita, String luogoNascita, String provinciaResidenza, boolean fuoriRegione) {
+    public void creaPaziente(String nome, String cognome, SimpleDateFormat dataNascita, String luogoNascita, String provinciaResidenza, boolean fuoriRegione) {
         // TODO implement here
     }
 
