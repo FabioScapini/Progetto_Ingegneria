@@ -41,11 +41,13 @@ public class SegreteriaAccettazione extends Segreteria {
     @Override
 	public void eseguiOperazione(int val) {
 		switch(val){
-			case 1: //inserisco paziente
-					Paziente paziente=new Paziente("");
+			case 1: terminal.setTerminal("Inserisci Codice Sanitario:\n");
+					String cod=new String(terminal.getAnswer());
+					Paziente paziente=new Paziente(cod);
 					if(paziente.pazienteEsistente())
-						break;
+						terminal.setTerminal("Paziente già inserito. Procedere a inserimento dati ricovero.\n");
 					else
+						terminal.setTerminal("Inserisci Nome:\n");
 						paziente.creaPaziente("", "", new SimpleDateFormat("") , "", "", false);
 					break;
 			case 2: //inserisco dati ricovero

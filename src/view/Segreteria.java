@@ -8,6 +8,8 @@ import controller.TSegreteria;
  * @author Edoardo Chigini, Fabio Scapini
  */
 public abstract class Segreteria {
+	
+	protected Terminal terminal;
 
     /**
      * Default constructor
@@ -15,6 +17,7 @@ public abstract class Segreteria {
     public Segreteria(TSegreteria tipo) {
     	
     	this.tipo = tipo;
+    	terminal = new Terminal(this, tipo);
     }
 
     /**
@@ -39,6 +42,10 @@ public abstract class Segreteria {
      */
     public void esaminaCartella(Paziente paziente) {
         // TODO implement here
+    }
+    
+    public Terminal getTerminal(){
+    	return terminal;
     }
 
     /**
