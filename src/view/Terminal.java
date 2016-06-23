@@ -327,5 +327,7 @@ public class Terminal extends JFrame {
 		setBounds(100, 100, 432, 311);
 		pack();
 	}
+	
+	
 
 }

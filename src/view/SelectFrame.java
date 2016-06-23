@@ -381,9 +381,7 @@ public class SelectFrame extends JFrame {
 	
 	private void create(TOperatore type){
 		Operatore operatore = inizialize(type);
-		//TODO verify();
-	
-		new Terminal(operatore, type);		
+		//TODO verify();		
 	}
 	
 	private Operatore inizialize(TOperatore tipo) {
